@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Pinyon+Script&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b9cf35b5bd.js"></script> 
+    <script src="js/app.js"></script>
+    <title>Descendants of Queen Victoria</title>
+</head>
+
+<body>
+    <h1>Descendants of Queen Victoria</h1>
+    <div class="main">
+        <div class="inputarea">
+            <form id='input'>
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name">
+                <label for="title">Title:</label>
+                <input type="text" name="title" id="title">
+                <label for="relationship">Relationship to Queen Victoria:</label>
+                <select name="relationship" id="relationship">
+                    <option value="" disabled selected></option>
+                    <option value="Child">Child</option>
+                    <option value="Grand-Child">Grand-Child</option>
+                    <option value="Great Grand-Child">Great Grand-Child</option>
+                </select>
+                <label for="monarch">Monarch of The UK</label>
+                <div class="monarch">
+                    <label for="yes">Yes</label>
+                    <input type="radio" name="monarch" id="yes" value='yes'>
+                    <label for="no">No</label>
+                    <input type="radio" name="monarch" id="no" value='no'>
+                </div>
+                <label for="birth">Year of Birth:</label>
+                <input type="text" name="birth" id="birth">
+                <label for="death">Year of Death:</label>
+                <input type="text" name="death" id="death">
+                <div id="buttons">
+                    <input class='button save' type="submit" value="Save">
+                    <button class='button' id= 'clear'>Clear</button>
+                </div>
+            </form>
+        </div>
+        <div class="outputarea">
+            <table id = 'descendantList'>
+                <tr>
+                    <th class='table_heading'></th>
+                    <th class='table_heading'>Name</th>
+                    <th class='table_heading'>Title</th>
+                    <th class='table_heading'>Relationship</th>
+                    <th class='table_heading'>Life Span</th>
+                </tr>
+            </table>
+            <!-- <ul id='descendantList'>
+
+            </ul> -->
+        </div>
+    </div>
+</body>
+
+</html>

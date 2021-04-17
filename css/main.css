@@ -1,0 +1,95 @@
+body {
+    background-color: blueviolet;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Pinyon Script', cursive;
+    font-size: 50px;
+    color: white;
+    margin: 20px 0px;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 100%;
+    gap: 0px 0px;
+    grid-template-areas:
+        "inputarea outputarea";
+}
+
+.inputarea,
+.outputarea {
+    width: 90%;
+    padding: 20px;
+    margin: 0px auto;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.inputarea {
+    height: 530px;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid blueviolet;
+    border-radius: 10px;
+    width: 90%;
+    padding: 20px 20px;
+}
+
+input[type=text], .monarch {
+    width: 95%;
+    padding: 6px;
+}
+
+select {
+    width: 98%;
+    padding: 3px;
+}
+
+label {
+    font-family: 'Lato', sans-serif;
+    color: silver;
+    margin: 10px 0px;
+}
+
+
+#buttons {
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+    gap: 0px 10px;
+    grid-template-areas:
+        "save clear";
+    justify-items: center;
+    width: 95%;
+}
+
+.button {
+    justify-content: space-;
+    font-family: 'Pinyon Script', cursive;
+    font-size: 20px;
+    margin-top: 20px;
+    width: 150px;
+}
+th {
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    color: blueviolet;
+    font-size: 26px;
+    padding: 10px;
+    width: 20%;
+}
+
+td {
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 26px;
+    padding: 10px;
+}
