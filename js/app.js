@@ -26,15 +26,19 @@ const createDescendant = function (form) {
     const monarch = document.createElement('td');
     monarch.textContent = form.monarch.value;
    
-    // if (form.monarch.value == 'yes') {
-    //     console.log('crown');
-    //     const displayCrown 
-    //     // crown.innerHTML = '<i class="fas fa-crown"></i>';
-    // } else {
-    //     console.log('no crown');
-    // };
+    //  Comment Out
 
-    descendant.appendChild(monarch);
+    if (form.monarch.value == 'yes') {
+        console.log('crown'); 
+        // const crown = '<i class="fas fa-crown"></i>';
+        // document.monarch.insertAdjacentHTML('beforeend', crown);
+        descendant.appendChild(monarch);
+    } else {
+        console.log('no crown');
+    };
+    // end
+
+    // descendant.appendChild(monarch);
 
     const name = document.createElement('td');
     name.textContent = form.name.value;
